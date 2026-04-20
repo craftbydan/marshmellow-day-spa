@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const DOWNLOAD_URL = process.env.NEXT_PUBLIC_DOWNLOAD_URL || "#";
+const DOWNLOAD_URL = (process.env.NEXT_PUBLIC_DOWNLOAD_URL || "#").trim();
 
 const steps = [
   {
