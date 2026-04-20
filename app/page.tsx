@@ -6,35 +6,35 @@ const steps = [
   {
     num: "1",
     emoji: "📦",
-    title: "Download the file",
+    title: "Download & unzip",
     desc: (
       <>
-        Click the big pink button above. A <code className="bg-pink-50 text-pink-600 px-1.5 py-0.5 rounded font-mono text-sm">.zip</code> file (~114 MB) will save to your Downloads folder.
+        Click the big pink button. A <code className="bg-pink-50 text-pink-600 px-1.5 py-0.5 rounded font-mono text-sm">.zip</code> file (~119 MB) saves to your Downloads.
+        Double-click it to unzip — you&apos;ll see <strong>exactly 2 files</strong>:{" "}
+        <code className="bg-pink-50 text-pink-600 px-1.5 py-0.5 rounded font-mono text-sm">Whisky.app</code> and{" "}
+        <code className="bg-pink-50 text-pink-600 px-1.5 py-0.5 rounded font-mono text-sm">Marshmellow Day Spa.app</code>.
       </>
     ),
   },
   {
     num: "2",
     emoji: "🥃",
-    title: "Install Whisky (free, one time)",
+    title: "Right-click Whisky → Open (one time)",
     desc: (
       <>
-        Unzip the file, open the folder and open{" "}
-        <code className="bg-pink-50 text-pink-600 px-1.5 py-0.5 rounded font-mono text-sm">00 HOW TO OPEN.html</code>{" "}
-        — it has a button to get Whisky. Download Whisky and drag it into your{" "}
-        <strong>Applications</strong> folder.
+        <strong>Right-click</strong> <code className="bg-pink-50 text-pink-600 px-1.5 py-0.5 rounded font-mono text-sm">Whisky.app</code> → <strong>Open → Open</strong>.
+        Mac asks this once for safety. Whisky will download the Windows compatibility layer (~800 MB) — takes a minute, keep Wi-Fi on.
       </>
     ),
   },
   {
     num: "3",
     emoji: "🎮",
-    title: "Right-click the app → Open",
+    title: "Right-click the game → Open → Play!",
     desc: (
       <>
-        Find <code className="bg-pink-50 text-pink-600 px-1.5 py-0.5 rounded font-mono text-sm">Marshmellow Day Spa.app</code>,{" "}
-        <strong>right-click it → Open → Open</strong>. Mac asks this once for safety, never again.
-        After that, just double-click to play anytime! 🎉
+        <strong>Right-click</strong> <code className="bg-pink-50 text-pink-600 px-1.5 py-0.5 rounded font-mono text-sm">Marshmellow Day Spa.app</code> → <strong>Open → Open</strong>.
+        Mac asks this once for safety, never again. After that, just double-click to play anytime! 🎉
       </>
     ),
   },
@@ -99,7 +99,7 @@ export default function Home() {
           >
             <span className="text-2xl">⬇️</span>
             Download for Mac
-            <span className="text-sm font-normal opacity-80 ml-1">· 114 MB</span>
+            <span className="text-sm font-normal opacity-80 ml-1">· 119 MB</span>
           </a>
 
           <p className="mt-4 text-sm" style={{ color: "#b08070" }}>
@@ -163,7 +163,7 @@ export default function Home() {
               { q: "Is this free?", a: "Yes! The game is free on itch.io. Whisky is also free and open source." },
               { q: "Does it work on my Mac?", a: "It works on Apple Silicon Macs — M1, M2, M3, and M4 chips. macOS Sonoma or newer." },
               { q: "What is Whisky?", a: "Whisky is a free app that lets you run Windows games on Mac using Wine under the hood." },
-              { q: "Do I need anything else?", a: "Nope. Just Whisky (one-time install) and the file you download here. That's it." },
+              { q: "Do I need anything else?", a: "Nope. Whisky is bundled right inside the zip. Just download, unzip, and you have everything you need." },
             ].map(({ q, a }) => (
               <div key={q} className="step-card p-6">
                 <h3 className="font-bold mb-2 text-base" style={{ color: "var(--brown)" }}>{q}</h3>
